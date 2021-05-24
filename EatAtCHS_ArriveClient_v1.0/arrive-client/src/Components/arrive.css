@@ -1,0 +1,28 @@
+.allday {
+  background-color: #d3d3d3;
+  display: block;
+  border: 2px solid #2a3439;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.alldayName {
+  margin-left: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.allday::after {
+  background-color: darkgrey;
+}
+
+.listHead {
+  text-align: center;
+  background-color: #2a3439;
+  border: 2px solid #2a3439;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}

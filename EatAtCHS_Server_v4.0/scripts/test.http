@@ -1,0 +1,112 @@
+###################################
+
+# EatAtCHS
+# created: 11.07.2019
+# author: Kogler and Allmaier
+# test http
+
+###################################
+
+@PORT=7000
+@TOKEN=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ1OTczMDgsImlkIjoyLCJ1c2VybmFtZSI6InRob21pMjUiLCJmaXJzdG5hbWUiOiJUaG9tYXMiLCJsYXN0bmFtZSI6IktvZ2xlciIsImlhdCI6MTU3NDU5NjcwOH0.PZXXf2SYGoT2Rt1UvGHw7Fnn4c5EguNW9lQBd8oH4Xc
+
+### Login Post
+
+POST http://localhost:{{PORT}}/api/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "test1",
+    "password": "cisco!1234"
+}
+### GET function
+GET http://localhost:{{PORT}}/user/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+
+### POST function for insert
+GET http://localhost:{{PORT}}/foodDay/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+### PUT function for change
+GET  http://localhost:{{PORT}}/bookedDay/
+Content-Type: application/json
+Accept: application/json
+Authorization: {{TOKEN}}
+
+### POST function for insert
+POST http://localhost:{{PORT}}/user/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "firstname": "testy",
+  "lastname": "tester",
+  "username": "test1",
+  "email": "test@edu.htl-villach.com",
+  "password": "test"
+}
+### POST function for insert
+POST http://localhost:{{PORT}}/foodDay/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "date": "2020-03-24",
+  "menuID": "2"
+}
+
+### POST function for insert
+POST http://localhost:{{PORT}}/Menu/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "name": "testname",
+  "description": "testdescription",
+  "starter": "tests",
+  "main": "testm",
+  "dessert": "testd"
+}
+
+### GET function for list
+GET http://localhost:{{PORT}}/bookedDay/arrive/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+
+### PUT function for update
+POST http://localhost:{{PORT}}/bookedDay/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "fID":21,
+    "uID": 1,
+    "loggedIn": true,
+    "paid": true,
+    "consumed": false
+}
+
+###
+DELETE http://localhost:{{PORT}}/bookedDay/4
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {TOKEN}}
+
+###
+
+GET  http://localhost:{{PORT}}/User/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{TOKEN}}

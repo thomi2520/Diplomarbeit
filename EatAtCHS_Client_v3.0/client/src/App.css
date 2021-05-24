@@ -1,0 +1,524 @@
+
+:root {
+  /* Dark */
+
+  --color-main-dark:                #202329;
+  --color-main-dark2:               #191c21;
+  --color-main-medium:              #282c34;
+  --color-text-main:                #ffffff;
+  --color-text-link-hover:          #cccccc;
+  --color-text-link-hover2:         #aaaaaa;
+
+  /* Light */
+
+  --color-main-light:               #bbbbbb;
+  --color-main-light2:              #e8e8e8;
+  --color-main-light-medium:        #fcfcfc;
+  --color-text-light-main:          #111111;
+  --color-text-link-hover-light:    #333333;
+  --color-text-link-hover-light2:   #555555;
+}
+
+
+.App {
+  color: var(--color-text-light-main);
+  background-color: var(--color-main-light-medium);
+}
+
+.App-header {
+  padding-left: 40px;
+  background-color: var(--color-main-light2);
+  color: var(--color-test-light-main);
+  min-height: 0px;
+  height: 80px;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  border-radius: 2px;
+}
+
+.App-body {
+  padding-left: 10px;
+  padding-top: 40px;
+  padding-right: 10px;
+  background-color: var(--color-main-light-medium);
+  font-size: calc(5px + 2vmin);
+}
+
+.alertField {
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+.adminBuchungsListe-true {
+  background-color: #9dff80;
+
+  border: 1px solid #98a3b5;
+  width: 350px;
+  max-width: 350px;
+  height: 60px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  font-size: calc(3px + 2vmin);
+}
+
+.adminBuchungsListe-false {
+  border: 1px solid #98a3b5;
+  background-color: var(--color-main-light2);
+  width: 350px;
+  max-width: 350px;
+  height: 60px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  font-size: calc(3px + 2vmin);
+}
+
+.AdminMenu {
+  padding-top: 0px;
+  position: fixed;
+  top: 0;
+}
+
+.AdminDashNavigation {
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-right: 20px;
+  margin-right: 10px;
+  width: 250px;
+  height: fill;
+  background-color: var(--color-main-light);
+  font-size: calc(5px + 2vmin);
+  box-shadow: 2px -2px 5px var(--color-main-light);
+  padding-bottom: 320px;
+}
+
+.AdminUnterseite {
+  margin-left: 60px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-right: 20px;
+}
+
+.AdminZweiteUnterseite {
+  margin-left: 50px;
+  background-color: var(--color-main-medium-light);
+}
+
+.tableTop {
+  vertical-align: top;
+}
+
+.seperationLine {
+  border-right: 1px solid black;
+}
+
+.SiteTitle {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inputText {
+  max-width: 300px;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.inputForm {
+  max-width: 450px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.MenuItem {
+  margin-left: 40px;
+  font-size: calc(5px + 2vmin);
+  font-weight: 100;
+}
+
+.Welcome {
+  font-size: calc(5px + 2vmin);
+  font-weight: 100;
+  float: right;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.MenuItem:hover {
+  cursor: pointer;
+  color: var(--color-text-link-hover-light);
+}
+
+.MenuItemRight {
+
+}
+
+.MenuTable {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.SiteTitle:hover {
+  cursor: pointer;
+  color: var(--color-text-link-hover-light);
+}
+
+.label {
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.thinHeading {
+  font-size: calc(7px + 2vmin);
+  font-weight: 100;
+}
+
+.field {
+  border: 1px solid #98a3b5;
+  border-radius: 5px;
+  height: 300px;
+  width:400px;
+  background-color: var(--color-main-light);
+  padding: 10px;
+  margin-top: 20px;
+  font-size: calc(3px + 2vmin);
+}
+
+.field2 {
+  border: 1px solid #98a3b5;
+  border-radius: 5px;
+  height: 300px;
+  width: 300px;
+  background-color: var(--color-main-light);
+  padding: 10px;
+  margin-top: 20px;
+  font-size: calc(3px + 2vmin);
+}
+
+.menuTableItem {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.linkStyleOne {
+  color: var(--color-text-link-hover-light);
+}
+
+.linkStyleOne:hover {
+  cursor: pointer;
+  color: var(--color-text-light-main);
+}
+
+.linkStyleTwo {
+  text-decoration: underline;
+}
+
+.linkStyleTwo:hover {
+  cursor: pointer;
+  color: var(--color-text-link-hover-light);
+}
+
+.bookedDaysList {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.editRight {
+  float: right;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: calc(1px + 2vmin);
+  cursor: pointer;
+}
+
+.inputField {
+  padding: 6px;
+  padding-left: 10px;
+  background-color: var(--color-main-light-medium);
+  border: 1px solid #98a3b5;
+  border-radius: 5px;
+  height: 30px;
+  color: var(--color-text-light-main);
+  font-size: calc(2px + 2vmin);
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nachricht {
+  padding: 6px;
+  padding-left: 10px;
+  background-color: var(--color-main-light-medium);
+  border: 1px solid #98a3b5;
+  border-radius: 5px;
+  height: 30px;
+  color: var(--color-text-light-main);
+  font-size: calc(2px + 2vmin);
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  length: 400px;
+}
+
+.inputButtonSmall {
+  cursor: pointer;
+  width: 100px;
+}
+
+.inputButtonBig {
+  cursor: pointer;
+  width: 200px;
+}
+
+.loginForm, .registerForm {
+  background-color: var(--color-main-light2);
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.tageAnmeldenForm {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+option, select {
+  padding: 3px;
+  padding-left: 5px;
+  background-color: var(--color-main-light);
+  border: 1px solid #98a3b5;
+  border-radius: 5px;
+  height: auto;
+  color: var(--color-text-light-main);
+  font-size: calc(2px + 2vmin);
+  font-weight: 100;
+}
+
+.inputField:focus {
+    outline-width: 0;
+    border: 1px solid #222222;
+    background-color: var(--color-main-light-medium);
+}
+
+
+
+.UserDayItem-true {
+  border: 1px solid #98a3b5;
+  background-color: #9dff80;
+  width: 200px;
+  max-width: 350px;
+  height: 60px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  font-size: calc(3px + 2vmin);
+}
+
+.UserDayItem-false {
+  border: 1px solid #98a3b5;
+  background-color: var(--color-main-light2);
+  width: 200px;
+  max-width: 350px;
+  height: 60px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  font-size: calc(3px + 2vmin);
+}
+
+.FoodDayClicked {
+  border: 1px solid #98a3b5;
+  background-color: var(--color-main-light);
+  width: 200px;
+  max-width: 350px;
+  height: 60px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  font-size: calc(3px + 2vmin);
+}
+
+.UserDayItem:hover {
+  background-color: var(--color-main-light-medium);
+}
+
+.adminListe {
+  border: 1px solid #98a3b5;
+  background-color: var(--color-main-light2);
+  width: 350px;
+  max-width: 350px;
+  height: 60px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  font-size: calc(3px + 2vmin);
+}
+
+.adminListe:hover {
+  background-color: var(--color-main-light-medium);
+}
+
+#FormBtnLogin {
+  margin-top: 30px;
+  background-color: var(--color-main-light2);
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+#FormBtnLogin:hover {
+  background-color: var(--color-main-light);
+}
+
+#FormBtnRegister {
+  margin-top: 30px;
+  background-color: var(--color-main-light2);
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+#FormBtnRegister:hover {
+  background-color: var(--color-main-light);
+}
+
+#LogoutButton {
+  float: right;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: 100px;
+  text-align: right;
+}
+
+#BtnAddDays {
+  float: right;
+  margin-top: 20px;
+  background-color: var(--color-main-light2);
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+#Abmelden, #bearbeitenZurück, #menüZurück, #Anmelden,
+.HinzufügenZurück, #HinzufügenZurück, .buttons {
+  float: right;
+  margin-top: 20px;
+  background-color: var(--color-main-light2);
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+.HinzufügenZurück, #HinzufügenZurück{
+  margin-right: 10px;
+}
+
+#Abmelden:hover, #bearbeitenZurück:hover, #menüZurück:hover,
+#Anmelden:hover, #HinzufügenZurück:hover, .buttons:hover {
+  background-color: var(--color-main-light);
+}
+
+#BtnAddDays:hover, #BtnLogout:hover {
+  background-color: var(--color-main-light);
+}
+
+#HinzufügenZurück, .HinzufügenZurück {
+  float: left;
+}
+
+#BtnLogout {
+  float: right;
+  background-color: var(--color-main-light2);
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#RegisterNow {
+  border:none;
+  float: right;
+  margin-bottom: 0px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.adminBtn {
+  font-size: calc(5px + 2vmin);
+  font-weight: 100;
+  background-color: var(--color-main-light);
+  border: none;
+  margin-bottom: 40px;
+}
+
+.adminBtn:hover {
+  color: var(--color-text-link-hover-light2);
+  cursor: pointer;
+
+}
+
+.adminBtn:focus {
+  outline: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.bearbeiten, .menü {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.textRightHomesite {
+  float: right;
+}
+
+html {
+  background-color: var(--color-main-light-medium);
+  color: var(--color-text-light-main);
+}

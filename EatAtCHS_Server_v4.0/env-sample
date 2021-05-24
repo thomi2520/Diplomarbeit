@@ -1,0 +1,18 @@
+# Sample .env
+#
+# Copy to .env and customize
+
+NODE_ENV=development
+
+#DB_USERNAME=plamps
+#DB_PASSWORD=gehheim
+DB_DATABASE=MessagesDB
+#DB_HOST=projects.htl-villach.at
+DB_DIALECT=sqlite
+DB_FORCE=true
+
+JWT_SECRET="this is top secret"
+JWT_LIFETIME=420
+
+PORT=5000
+IGNNORE_AUTH=true
